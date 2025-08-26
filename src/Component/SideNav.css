@@ -1,0 +1,43 @@
+/* Sidebar general */
+.sidebar-link {
+  color: #526484 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  color: #3fbd9a !important;
+  background-color: #f0f6ff;
+}
+
+/* Active state (Dashboard default) */
+.sidebar-link.active {
+  color: #198754 !important; /* Bootstrap green */
+  font-weight: bold;
+  /* background-color: #eafaf4; */
+}
+
+/* Submenu styles */
+.submenu {
+  margin: 4px 0;
+}
+
+.submenu-link {
+  display: block;
+  padding: 6px 12px;
+  color: #526484;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.submenu-link:hover {
+  color: #3fbd9a;
+  /* background-color: #f0f6ff; */
+}
