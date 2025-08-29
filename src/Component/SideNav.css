@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Sidebar general */
 .sidebar-link {
   color: #526484 !important;
@@ -41,3 +42,75 @@
   color: #3fbd9a;
   /* background-color: #f0f6ff; */
 }
+=======
+.sidebar-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar general */
+.sidebar-link {
+  color: #526484 !important;
+  /* text-decoration: none !important; */
+  /* font-weight: 500; */
+  /* background: none; */
+  /* border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease; */
+}
+
+
+.sidebar-link:hover {
+  color: #3fbd9a !important;
+} 
+
+/* Default icon color */
+.error-icon {
+  color: #6c757d; /* normal gray */
+  transition: color 0.3s ease-in-out;
+}
+
+/* Change only icon color when hovering on summary */
+summary:hover .error-icon {
+  color: #3fbd9a;
+}
+
+/* Active state (Dashboard default) */
+.sidebar-link.active {
+  color: #198754 !important; /* Bootstrap green */
+  font-weight: bold;
+  /* background-color: #eafaf4; */
+}
+
+/* Submenu styles */
+.submenu {
+  margin: 4px 0;
+}
+
+.submenu-link {
+  display: block;
+  padding: 6px 12px;
+  color: #526484;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.submenu-link:hover {
+  color: #3fbd9a;
+  /* background-color: #f0f6ff; */
+}
+>>>>>>> d92d4c5 (template)

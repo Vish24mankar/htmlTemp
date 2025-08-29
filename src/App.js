@@ -1,26 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SideNav from './Component/SideNav';
-import IconSidebar from './Component/IconSidebar';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App d-flex">
-        {/* Sidebar stays always visible */}
-        <IconSidebar />
+  const location = useLocation();
 
-        {/* Main content changes with route */}
-        <div className="flex-grow-1 p-3">
-          <Routes>
-            <Route path="/" element={<SideNav />} />
-            <Route path="/sidenav" element={<SideNav />} />
-          </Routes>
-        </div>
-      </div>
-    </BrowserRouter>
+  // Check if current path is login
+  const isLoginPage = location.pathname === "/" || location.pathname === "/login";
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
-export default App;
+// Wrap App with BrowserRouter at root (index.js)
+export default function AppWrapper() {
+  return (
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+}
